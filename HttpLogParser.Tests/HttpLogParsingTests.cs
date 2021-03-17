@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Threading.Tasks;
 using HttpLogParser.ConsoleApp;
 using Shouldly;
@@ -13,7 +11,6 @@ namespace HttpLogParser.Tests
         public async Task ExampleDataLog_UniqueIPAddresses_Equals11()
         {
             //11
-
             var logTestData = await Resources.GetLogTestData();
             var results = HttpLogAnalytics.Parse(logTestData);
             results.UniqueIps.ShouldBe(11);
