@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpLogParser.ConsoleApp", "HttpLogParser.ConsoleApp\HttpLogParser.ConsoleApp.csproj", "{F25B6C01-DAD5-48D9-9962-3851DC0C465A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpLogParser.Tests", "HttpLogParser.Tests\HttpLogParser.Tests.csproj", "{B27EE62A-E151-437B-88DA-122B1F859FAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F25B6C01-DAD5-48D9-9962-3851DC0C465A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F25B6C01-DAD5-48D9-9962-3851DC0C465A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F25B6C01-DAD5-48D9-9962-3851DC0C465A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F25B6C01-DAD5-48D9-9962-3851DC0C465A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27EE62A-E151-437B-88DA-122B1F859FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27EE62A-E151-437B-88DA-122B1F859FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27EE62A-E151-437B-88DA-122B1F859FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27EE62A-E151-437B-88DA-122B1F859FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
