@@ -8,7 +8,7 @@ namespace HttpLogParser.Tests
     public class HttpLogParsingTests
     {
         [Fact]
-        public async Task ExampleDataLog_UniqueIPAddresses_Equals11()
+        public async Task ExampleDataLog_UniqueIPAddresses_EqualsEleven()
         {
             //11
             var logTestData = await Resources.GetLogTestData();
@@ -17,7 +17,7 @@ namespace HttpLogParser.Tests
         }
 
         [Fact]
-        public async Task ExampleDataLog_MostActiveIps_Equals3()
+        public async Task ExampleDataLog_MostActiveIps_EqualsThree()
         {
             //168.41.191.40
             //50.112.00.11
@@ -29,7 +29,7 @@ namespace HttpLogParser.Tests
         }
 
         [Fact]
-        public async Task ExampleDataLog_MostVisited_Equals3()
+        public async Task ExampleDataLog_MostVisited_EqualsThree()
         {
             // /docs/manage-websites/
             // /faq/
