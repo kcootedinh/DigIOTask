@@ -29,13 +29,31 @@ namespace HttpLogParser.Tests
         }
 
         [Fact]
+        public async Task ExampleDataLog_MostActiveIps_ShouldContain()
+        {
+            var logTestData = await Resources.GetLogTestData();
+            var results = HttpLogAnalytics.Parse(logTestData);
+            results.MostActiveIps.ShouldContain("168.41.191.40");
+            results.MostActiveIps.ShouldContain("50.112.00.11");
+            results.MostActiveIps.ShouldContain("177.71.128.21");
+        }
+
+        [Fact]
         public async Task ExampleDataLog_MostVisited_EqualsThree()
         {
-            // /docs/manage-websites/
-            // /faq/
             var logTestData = await Resources.GetLogTestData();
             var results = HttpLogAnalytics.Parse(logTestData);
             results.MostVisitedUrls.Count.ShouldBe(3);
+        }
+
+        [Fact]
+        public async Task ExampleDataLog_MostVisited_ShouldContain()
+        {
+            var logTestData = await Resources.GetLogTestData();
+            var results = HttpLogAnalytics.Parse(logTestData);
+            results.MostVisitedUrls.ShouldContain("http://example.net/faq/");
+            results.MostVisitedUrls.ShouldContain("/intranet-analytics/");
+            results.MostVisitedUrls.ShouldContain("/docs/manage-websites/");
         }
     }
 }

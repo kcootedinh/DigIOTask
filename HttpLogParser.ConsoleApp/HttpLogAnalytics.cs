@@ -20,13 +20,13 @@ namespace HttpLogParser.ConsoleApp
             var requestedUrls = entries
                 .Select(ParseRequestedUrl)
                 .GroupBy(url => url)
-                .OrderBy(group => group.Count())
+                .OrderByDescending(group => group.Count())
                 .Take(3)
                 .Select(group => group.Key);
 
             var mostActiveIps = ipAddresses
                 .GroupBy(ipAddress => ipAddress)
-                .OrderBy(group => group.Count())
+                .OrderByDescending(group => group.Count())
                 .Take(3)
                 .Select(group => group.Key);
 
